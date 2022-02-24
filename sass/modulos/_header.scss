@@ -1,0 +1,67 @@
+.header{
+    background-color: $Primario;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: $font-Nunito;
+    font-weight: 600;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+        &__contenedor{
+            height: 100%;
+            &__caja{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &--img{
+                    height: 9.4rem;
+                }
+            }
+        }
+        &__menu{
+            display: flex;
+            &__lista{
+                margin: auto 10px;
+                &--link{
+                    color: $Blanco;
+                    font-size: 2rem;           
+                }
+            }
+        }
+        &__buttomCont{
+            margin: auto 35px;
+            display: none;
+            &__link{
+                &--icono{
+                    color: $Blanco;
+                    font-size: 3rem;
+                }
+            }
+        }
+        //diseño responsivo
+        @media only screen and (max-width: $bp-medium){
+            &__menu{
+                &__lista{
+                    &--link{
+                        font-size: 1.5rem;
+                        color: $Blanco;
+                    }
+                }
+            }
+        }  
+        @media only screen and (max-width: $bp-small){
+            &__menu{
+                display: none;
+            }
+            &__buttomCont{
+                display: block;
+            }
+        }
+
+    }
+}
+    

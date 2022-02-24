@@ -1,0 +1,26 @@
+.footer{
+    background-color: black;
+    &__cont{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        &__red{
+            margin: 20px 8px;
+            a{
+                i{
+                    color: $Blanco;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+    &__info{
+        text-align: center;
+        font-size: 1.6rem;
+        color: $Blanco;
+        padding-bottom: 18px;
+        p{
+            padding-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.wtspBtn{
+    background-color: $Whatsapp;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    position: fixed;
+    left: 2.5rem;
+    bottom: 2.5rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        i{
+        display: block;
+        color: $Blanco;
+        font-size: 4rem;
+        }
+    }
+}
